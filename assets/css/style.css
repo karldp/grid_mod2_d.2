@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "nav nav"
+    "aside section"
+    "footer footer";
+    height: 100vh;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 17% auto 10%;
+}
+
+nav{
+    background-color:rgb(14, 92, 44);
+    grid-area: nav;
+    display: flex;
+    gap: 37%;
+    align-items: center;
+    font-size: 60px;
+    font-family: 'Rubik Distressed', cursive;
+    color: aliceblue;
+}
+
+.logo1{
+    align-items: start;
+    width: 70px;
+}
+
+.title{
+    font-family: 'Rubik Distressed', cursive;
+}
+
+aside{
+    background-color: rgb(185, 170, 99);
+    grid-area: aside;
+}
+
+menu{
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.categorias{
+    margin-left: 37px;
+    /* justify-content: space-between; */
+    height: 500px;
+}
+
+.categoria_1{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.categoria_1 a:hover{
+    color: blueviolet;
+}
+
+.quantity{
+    margin-left: 5px;
+    color: rgb(84, 83, 83);
+}
+
+.gun_name{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    background-color: rgb(1, 14, 5);
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 15px;
+}
+
+.card{
+margin-bottom: 15px;
+max-width: 100%;
+}
+
+.cardimg{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    height: 100px;
+    background-color: rgb(14, 92, 44);
+}
+
+.card_button{
+    height: 30px;
+}
+
+button{
+    border: none;
+    width: 100%;
+    font-weight:bold;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(101, 222, 133);
+}
+
+footer{
+    background-color: rgb(14, 92, 44);
+    grid-area: footer;
+}
+
+.logofooter{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logofooter img{
+    width: 40px;
+    margin-top: 0.5rem;
+}
+
+.logofooter p{
+    margin-top: 1rem;
+}
